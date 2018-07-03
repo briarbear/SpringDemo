@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans>
+
+    <bean id = "hello" class = "ioc.Hello"/>
+    <bean id = "student" class="ioc.Student"/>
+    <bean id = "service" class="ioc.StudentService">
+        <property name = "greeting" bean = "hello"/>
+    </bean>
+</beans>
